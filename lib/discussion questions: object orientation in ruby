@@ -1,0 +1,36 @@
+class Animal
+
+    attr_accessor :species
+ 
+  def species
+    @species = "cat"
+  end
+ 
+  def set_species(name_of_species)
+    @species = name_of_species
+  end
+end
+
+animal1 = Animal.new
+animal1.species
+
+  
+  maru = Animal.new
+  hanna = Animal.new
+
+  maru == hanna #=> false
+
+  class Animal
+    attr_accessor :species
+
+    def species 
+      @species = "cat"
+    end
+   
+    def say_species
+      puts "Hi! I'm a #{species}"
+    end
+  end
+  
+    maru = Animal.new
+    maru.say_species
